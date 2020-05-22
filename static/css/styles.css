@@ -1,3 +1,58 @@
+:root {
+  --dark_Blue: hsl(233, 26%, 24%);
+  --lime_Green: hsl(136, 65%, 51%);
+  --bright_Cyan: hsl(192, 70%, 51%);
+  --grayish_Blue: hsl(233, 8%, 62%);
+  --light_Grayish_Blue: hsl(220, 16%, 96%);
+  --very_Light_Gray: hsl(0, 0%, 98%);
+  --white: hsl(0, 0%, 100%);
+  --wrapperSpace: 1.34em;
+  font-size: 18px;
+}
+
+body {
+  font-family: "Public Sans", sans-serif;
+  margin: 0;
+  color: var(--grayish_Blue);
+}
+
+.wrapper {
+  padding: 0em var(--wrapperSpace);
+}
+
+.hero {
+  text-align: center;
+}
+.hero .copy {
+  margin-bottom: 2em;
+  margin-top: 1.1em;
+}
+
+.title {
+  border: 1px solid green;
+}
+.title__h1 {
+  font-size: 2.2em;
+  font-weight: 400;
+  color: var(--dark_Blue);
+  margin-bottom: 0;
+}
+
+.copy {
+  color: var(--grayish_Blue);
+  line-height: 1.7;
+  font-size: 0.8em;
+}
+
+.button {
+  padding: 0.8em 2em;
+  border-radius: 2em;
+  font-size: 0.8em;
+  text-align: center;
+  color: var(--white);
+  background: linear-gradient(to right, var(--lime_Green) 0%, var(--bright_Cyan) 100%);
+}
+
 .attribution {
   font-size: 11px;
   text-align: center;
