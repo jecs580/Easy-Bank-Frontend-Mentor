@@ -1,3 +1,14 @@
 .header {
-  border: 5px solid blue;
+  // border: 5px solid blue;
+  padding: 1.1em 1.34em;
+  margin: auto 0;
+  display: flex;
+  justify-content: space-between;
+}
+.menu {
+  // border: 1px solid purple;
+  width: 25px;
+  background-image: url("../../static/images/icon-hamburger.svg");
+  background-position: center;
+  background-repeat: no-repeat;
 }
