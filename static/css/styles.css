@@ -91,14 +91,64 @@ body {
 .why .title__h1 {
   font-size: 1.8em;
 }
+.why img {
+  margin-bottom: 0.4em;
+}
 .why__grid {
   display: grid;
   grid-template-rows: 1fr;
-  gap: 15px;
   margin-top: 2.8em;
+}
+.why__item {
+  margin-bottom: 15px;
 }
 .why__item .title__h1 {
   font-size: 1.2em;
+}
+
+.lastArticle {
+  background: var(--very_Light_Gray);
+  margin: 0 auto;
+  padding: 3.5em 0;
+  text-align: center;
+}
+.lastArticle .title__h1 {
+  font-size: 1.8em;
+}
+.lastArticle__item {
+  position: relative;
+  display: block;
+  text-align: left;
+  background: white;
+  margin-top: 1.67em;
+}
+.lastArticle__item .title__h1 {
+  font-size: 0.85em;
+  margin: 0 32px;
+  margin-bottom: 10px;
+  padding-top: 10px;
+}
+.lastArticle__item img {
+  width: 100%;
+  height: 200px;
+  border-radius: 5px;
+  margin-bottom: 15px;
+  object-fit: cover;
+}
+.lastArticle__item small {
+  margin: 0 32px;
+  position: relative;
+  font-size: 0.5em;
+  letter-spacing: 0.4px;
+}
+.lastArticle__item .copy {
+  margin: 0 32px;
+  font-size: 0.7em;
+  text-align: left;
+  line-height: 1.5;
+  letter-spacing: 0.15px;
+  font-weight: 400;
+  padding-bottom: 3.2em;
 }
 
 .attribution {
