@@ -1,4 +1,5 @@
 @import "./header.scss";
+@import "./footer.scss";
 :root {
   --dark_Blue: hsl(233, 26%, 24%);
   --lime_Green: hsl(136, 65%, 51%);
@@ -74,6 +75,7 @@ body {
   padding: 0.9em 2.3em;
   border-radius: 2em;
   font-size: 0.8em;
+  border: none;
   display: inline-block;
   text-align: center;
   color: var(--white);
@@ -114,6 +116,8 @@ body {
   margin: 0 auto;
   padding: 3.5em 0;
   text-align: center;
+  padding-bottom: 5em;
+
   &__grid {
     display: grid;
     gap: 1.67em;
@@ -148,6 +152,35 @@ body {
       font-weight: 400;
       padding-bottom: 3.2em;
     }
+  }
+}
+@mixin icon {
+  height: 25px;
+  width: 25px;
+  // display: inline-flex;
+  background-repeat: no-repeat;
+  background-size: 25px;
+}
+.icon {
+  &__facebook {
+    @include icon;
+    background-image: url("../../static/images/icon-facebook.svg");
+  }
+  &__youtube {
+    @include icon;
+    background-image: url("../../static/images/icon-youtube.svg");
+  }
+  &__twitter {
+    @include icon;
+    background-image: url("../../static/images/icon-twitter.svg");
+  }
+  &__pinterest {
+    @include icon;
+    background-image: url("../../static/images/icon-pinterest.svg");
+  }
+  &__instragram {
+    @include icon;
+    background-image: url("../../static/images/icon-instagram.svg");
   }
 }
 .attribution {

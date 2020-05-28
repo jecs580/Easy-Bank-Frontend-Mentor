@@ -12,6 +12,42 @@
   background-repeat: no-repeat;
 }
 
+.footer {
+  background: var(--dark_Blue);
+  color: var(--white);
+  text-align: center;
+  padding: 2.2em 0;
+  padding-bottom: 2em;
+}
+.footer svg {
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 1.5em;
+}
+.footer__link {
+  line-height: 2;
+  text-decoration: none;
+  color: var(--light_Grayish_Blue);
+  font-size: 0.8em;
+  display: block;
+}
+.footer .icon {
+  display: grid;
+  grid-template-columns: repeat(5, 25px);
+  gap: 0.8em;
+  justify-content: center;
+  margin: 2em 0;
+}
+.footer .button {
+  margin-top: 2em;
+  margin-bottom: 1em;
+}
+.footer__copy_right {
+  color: var(--grayish_Blue);
+  font-size: 0.8em;
+  margin-top: 1em;
+}
+
 :root {
   --dark_Blue: hsl(233, 26%, 24%);
   --lime_Green: hsl(136, 65%, 51%);
@@ -85,6 +121,7 @@ body {
   padding: 0.9em 2.3em;
   border-radius: 2em;
   font-size: 0.8em;
+  border: none;
   display: inline-block;
   text-align: center;
   color: var(--white);
@@ -117,6 +154,7 @@ body {
   margin: 0 auto;
   padding: 3.5em 0;
   text-align: center;
+  padding-bottom: 5em;
 }
 .lastArticle__grid {
   display: grid;
@@ -150,6 +188,42 @@ body {
   letter-spacing: 0.15px;
   font-weight: 400;
   padding-bottom: 3.2em;
+}
+
+.icon__facebook {
+  height: 25px;
+  width: 25px;
+  background-repeat: no-repeat;
+  background-size: 25px;
+  background-image: url("../../static/images/icon-facebook.svg");
+}
+.icon__youtube {
+  height: 25px;
+  width: 25px;
+  background-repeat: no-repeat;
+  background-size: 25px;
+  background-image: url("../../static/images/icon-youtube.svg");
+}
+.icon__twitter {
+  height: 25px;
+  width: 25px;
+  background-repeat: no-repeat;
+  background-size: 25px;
+  background-image: url("../../static/images/icon-twitter.svg");
+}
+.icon__pinterest {
+  height: 25px;
+  width: 25px;
+  background-repeat: no-repeat;
+  background-size: 25px;
+  background-image: url("../../static/images/icon-pinterest.svg");
+}
+.icon__instragram {
+  height: 25px;
+  width: 25px;
+  background-repeat: no-repeat;
+  background-size: 25px;
+  background-image: url("../../static/images/icon-instagram.svg");
 }
 
 .attribution {

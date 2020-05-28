@@ -1,0 +1,35 @@
+.footer {
+  background: var(--dark_Blue);
+  color: var(--white);
+  text-align: center;
+  padding: 2.2em 0;
+  padding-bottom: 2em;
+  svg {
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 1.5em;
+  }
+  &__link {
+    line-height: 2;
+    text-decoration: none;
+    color: var(--light_Grayish_Blue);
+    font-size: 0.8em;
+    display: block;
+  }
+  .icon {
+    display: grid;
+    grid-template-columns: repeat(5, 25px);
+    gap: 0.8em;
+    justify-content: center;
+    margin: 2em 0;
+  }
+  .button {
+    margin-top: 2em;
+    margin-bottom: 1em;
+  }
+  &__copy_right {
+    color: var(--grayish_Blue);
+    font-size: 0.8em;
+    margin-top: 1em;
+  }
+}
