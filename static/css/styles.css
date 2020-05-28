@@ -58,12 +58,21 @@ body {
 .title {
   border: 2px solid green;
 }
-.title__h1 {
+.title__h1, .title__h3, .title__h2 {
   font-size: 2.2em;
   font-weight: 400;
   color: var(--dark_Blue);
   margin-bottom: 0;
   margin-top: 0.6em;
+}
+.title__h2 {
+  font-size: 1.8em;
+}
+.title__h3 {
+  font-size: 0.85em;
+  margin: 0 32px;
+  margin-bottom: 10px;
+  padding-top: 10px;
 }
 
 .copy {
@@ -88,9 +97,6 @@ body {
   padding: 2.3em 0;
   text-align: center;
 }
-.why .title__h1 {
-  font-size: 1.8em;
-}
 .why img {
   margin-bottom: 0.4em;
 }
@@ -102,7 +108,7 @@ body {
 .why__item {
   margin-bottom: 15px;
 }
-.why__item .title__h1 {
+.why__item .title__h1, .why__item .title__h2, .why__item .title__h3 {
   font-size: 1.2em;
 }
 
@@ -112,26 +118,21 @@ body {
   padding: 3.5em 0;
   text-align: center;
 }
-.lastArticle .title__h1 {
-  font-size: 1.8em;
+.lastArticle__grid {
+  display: grid;
+  gap: 1.67em;
+  padding-top: 1.67em;
 }
 .lastArticle__item {
   position: relative;
   display: block;
   text-align: left;
-  background: white;
-  margin-top: 1.67em;
-}
-.lastArticle__item .title__h1 {
-  font-size: 0.85em;
-  margin: 0 32px;
-  margin-bottom: 10px;
-  padding-top: 10px;
+  background: var(--white);
+  border-radius: 5px;
+  overflow: hidden;
 }
 .lastArticle__item img {
   width: 100%;
-  height: 200px;
-  border-radius: 5px;
   margin-bottom: 15px;
   object-fit: cover;
 }
