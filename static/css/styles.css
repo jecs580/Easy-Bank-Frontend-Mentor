@@ -190,6 +190,10 @@ body {
   padding-bottom: 3.2em;
 }
 
+.ancho {
+  margin: 0 28px !important;
+}
+
 .icon__facebook {
   height: 25px;
   width: 25px;
