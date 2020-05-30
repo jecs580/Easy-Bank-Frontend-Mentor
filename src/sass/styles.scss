@@ -40,6 +40,59 @@ body {
     background-repeat: no-repeat, no-repeat;
     background-size: 345px, cover;
   }
+  @media screen and (min-width: 768px) {
+    margin: 0;
+    background: url(../../static/images/bg-intro-desktop.svg);
+    background-position: right -470px top -255px;
+    background-repeat: no-repeat;
+    background-size: 1280px;
+    box-sizing: border-box;
+    &__content {
+      // border: 1px solid green;
+      display: grid;
+      grid-template-areas: "description image";
+      grid-template-columns: 40% 1fr;
+      min-height: 650px;
+      align-items: center;
+    }
+    &__image {
+      // border: 10px solid green;
+      grid-area: image;
+      // min-height: inherit; // Obtiene el tamano del alto del padre
+      // background: none;
+      position: absolute;
+      width: 775px;
+      right: 0;
+      height: 775px;
+      margin: 0;
+      background: url(../images/image-mockups.png) right -130px top -122px
+        no-repeat;
+
+      // background: url(../images/image-mockups.png),
+      //   url(../../static/images/bg-intro-desktop.svg);
+      // // background-size: cover;
+      // background-position: right, left;
+      // background-repeat: no-repeat, no-repeat;
+      // background-size: 800px;
+    }
+    &__description {
+      // border: 1px solid red;
+      padding-left: 7.7em;
+      // display: flex;
+      margin-right: -40px;
+
+      text-align: left;
+      // flex-direction: column;
+      // justify-content: center;
+      .title__h1 {
+        font-size: 3em;
+      }
+      .copy {
+        // padding: 0 2em;
+        font-size: 1em;
+      }
+    }
+  }
 }
 .title {
   border: 2px solid green;

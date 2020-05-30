@@ -90,6 +90,43 @@ body {
   background-repeat: no-repeat, no-repeat;
   background-size: 345px, cover;
 }
+@media screen and (min-width: 768px) {
+  .hero {
+    margin: 0;
+    background: url(../../static/images/bg-intro-desktop.svg);
+    background-position: right -470px top -255px;
+    background-repeat: no-repeat;
+    background-size: 1280px;
+    box-sizing: border-box;
+  }
+  .hero__content {
+    display: grid;
+    grid-template-areas: "description image";
+    grid-template-columns: 40% 1fr;
+    min-height: 650px;
+    align-items: center;
+  }
+  .hero__image {
+    grid-area: image;
+    position: absolute;
+    width: 775px;
+    right: 0;
+    height: 775px;
+    margin: 0;
+    background: url(../images/image-mockups.png) right -130px top -122px no-repeat;
+  }
+  .hero__description {
+    padding-left: 7.7em;
+    margin-right: -40px;
+    text-align: left;
+  }
+  .hero__description .title__h1, .hero__description .title__h3, .hero__description .title__h2 {
+    font-size: 3em;
+  }
+  .hero__description .copy {
+    font-size: 1em;
+  }
+}
 
 .title {
   border: 2px solid green;
