@@ -71,12 +71,16 @@ body {
 }
 
 .wrapper {
-  padding: 0em var(--wrapperSpace);
+  padding: 0 var(--wrapperSpace);
+  max-width: calc(1115px + 1.5em);
+  margin: auto;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 .hero {
   text-align: center;
-  margin-bottom: 4.8em;
+  padding-bottom: 4.8em;
 }
 .hero .copy {
   margin-bottom: 2.1em;
@@ -92,39 +96,54 @@ body {
 }
 @media screen and (min-width: 768px) {
   .hero {
-    margin: 0;
+    text-align: left;
     background: url(../../static/images/bg-intro-desktop.svg);
-    background-position: right -470px top -255px;
+    background-position: left 705px top -290px;
     background-repeat: no-repeat;
-    background-size: 1280px;
+    background-size: cover;
+    min-height: 370px;
     box-sizing: border-box;
   }
   .hero__content {
+    border: 1px solid blue;
     display: grid;
+    min-height: 370px;
+    align-items: center;
     grid-template-areas: "description image";
-    grid-template-columns: 40% 1fr;
-    min-height: 650px;
+    grid-template-columns: 480px 1fr;
+    position: relative;
     align-items: center;
   }
   .hero__image {
+    border: 1px solid purple;
     grid-area: image;
+    min-height: inherit;
     position: absolute;
-    width: 775px;
-    right: 0;
+    width: 650px;
+    left: 0;
     height: 775px;
     margin: 0;
-    background: url(../images/image-mockups.png) right -130px top -122px no-repeat;
+    background: url(../images/image-mockups.png) left bottom no-repeat;
+    background-size: cover;
   }
   .hero__description {
-    padding-left: 7.7em;
-    margin-right: -40px;
+    border: 1px solid red;
     text-align: left;
   }
-  .hero__description .title__h1, .hero__description .title__h3, .hero__description .title__h2 {
-    font-size: 3em;
+}
+@media screen and (min-width: 1024px) {
+  .hero {
+    min-height: 550px;
   }
-  .hero__description .copy {
-    font-size: 1em;
+  .hero__content {
+    min-height: 550px;
+  }
+  .hero__image {
+    background: url(../images/image-mockups.png) right bottom no-repeat;
+    background-size: 100%;
+    width: 730px;
+    left: 0;
+    top: 0;
   }
 }
 
