@@ -31,16 +31,43 @@
       align-items: center;
       padding: 0.5em 0;
       .menu {
+        margin: 0 0;
         display: flex;
+        padding: 18px;
         flex-direction: row;
         list-style: none;
         li {
           a {
-            padding: 0 0.8em;
+            padding: 28px 0.3em;
             text-decoration: none;
             color: var(--grayish_Blue);
             font-size: 0.8em;
+            position: relative;
+            letter-spacing: 0.5px;
+            margin-right: 0.8em;
           }
+          // a:hover {
+          //   font-weight: bold;
+          // }
+          // a:hover::after {
+          //   width: 100%;
+          //   left: 0;
+          // }
+          // a::after {
+          //   transition: all 0.3s;
+          //   content: "";
+          //   position: absolute;
+          //   bottom: 0;
+          //   left: 50%;
+          //   display: block;
+          //   width: 0;
+          //   height: 5px;
+          //   background: linear-gradient(
+          //     to right,
+          //     var(--lime_Green) 0%,
+          //     var(--bright_Cyan) 100%
+          //   );
+          // }
         }
         &__button {
           display: none;
