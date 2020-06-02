@@ -60,7 +60,7 @@
   padding: 2.2em 0;
   padding-bottom: 2em;
 }
-.footer svg {
+.footer__logo {
   display: block;
   margin: 0 auto;
   margin-bottom: 1.5em;
@@ -72,7 +72,7 @@
   font-size: 0.8em;
   display: block;
 }
-.footer .icon {
+.footer__icon {
   display: grid;
   grid-template-columns: repeat(5, 25px);
   gap: 0.8em;
@@ -87,6 +87,45 @@
   color: var(--grayish_Blue);
   font-size: 0.8em;
   margin-top: 1em;
+}
+@media screen and (min-width: 1024px) {
+  .footer {
+    padding: 1.2em;
+  }
+  .footer .wrapper {
+    display: grid;
+    gap: 1em;
+    justify-content: center;
+    grid-template-columns: 200px 1fr 400px;
+    grid-template-areas: "logo links button" "social links copyright";
+  }
+  .footer__logo {
+    grid-area: logo;
+    margin: initial;
+  }
+  .footer__icon {
+    grid-area: social;
+    padding: 0;
+    margin: 0;
+  }
+  .footer__links {
+    padding-left: 3em;
+    grid-area: links;
+    display: grid;
+    grid-gap: 0;
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: start;
+  }
+  .footer__button {
+    grid-area: button;
+    text-align: right;
+    margin-top: -1.4em;
+  }
+  .footer__copy_right {
+    grid-area: copyright;
+    text-align: right;
+    margin-top: -0.5em;
+  }
 }
 
 :root {
@@ -332,6 +371,7 @@ body {
   }
   .lastArticle .title__h2 {
     font-size: 2.1em;
+    padding-bottom: 0.5em;
   }
   .lastArticle__grid {
     grid-template-columns: repeat(2, 1fr);

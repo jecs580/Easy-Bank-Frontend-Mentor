@@ -4,7 +4,7 @@
   text-align: center;
   padding: 2.2em 0;
   padding-bottom: 2em;
-  svg {
+  &__logo {
     display: block;
     margin: 0 auto;
     margin-bottom: 1.5em;
@@ -16,7 +16,7 @@
     font-size: 0.8em;
     display: block;
   }
-  .icon {
+  &__icon {
     display: grid;
     grid-template-columns: repeat(5, 25px);
     gap: 0.8em;
@@ -31,5 +31,55 @@
     color: var(--grayish_Blue);
     font-size: 0.8em;
     margin-top: 1em;
+  }
+  @media screen and(min-width:1024px) {
+    // border: 10px solid yellow;
+    padding: 1.2em;
+    .wrapper {
+      display: grid;
+      gap: 1em;
+      justify-content: center;
+
+      grid-template-columns: 200px 1fr 400px;
+      grid-template-areas:
+        "logo links button"
+        "social links copyright";
+    }
+    &__logo {
+      // border: 1px solid red;
+      grid-area: logo;
+      margin: initial; // Valor que permite copiar los valores que estaban predefinidos anteriormente
+    }
+    &__icon {
+      // border: 1px solid yellow;
+      grid-area: social;
+      padding: 0;
+      margin: 0;
+    }
+    &__links {
+      padding-left: 3em;
+      // border: 1px solid green;
+      grid-area: links;
+      display: grid;
+      grid-gap: 0;
+      grid-template-columns: repeat(2, 1fr);
+      justify-items: start;
+    }
+    &__button {
+      // border: 1px solid pink;
+      grid-area: button;
+      text-align: right;
+      margin-top: -1.4em;
+      // .button {
+      //   margin-bottom: 0;
+      // }
+    }
+    &__copy_right {
+      // border: 1px solid blue;
+      grid-area: copyright;
+      text-align: right;
+      margin-top: -0.5em;
+      // margin: 0;
+    }
   }
 }
