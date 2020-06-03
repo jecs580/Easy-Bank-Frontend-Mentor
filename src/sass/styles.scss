@@ -37,13 +37,13 @@ body {
   }
   &__image {
     // border: 1px solid green;
-    height: 300px;
+    height: 292px;
     margin: 0 calc(-1 * var(--wrapperSpace));
     background: url(../images/image-mockups.png),
       url(../../static/images/bg-intro-mobile.svg);
     background-position: bottom, center;
     background-repeat: no-repeat, no-repeat;
-    background-size: 345px, cover;
+    background-size: 335px, cover;
   }
   @media screen and (min-width: 768px) {
     // margin: 0;
