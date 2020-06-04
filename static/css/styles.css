@@ -1,5 +1,8 @@
 .header {
-  position: relative;
+  position: fixed;
+  width: 100%;
+  z-index: 10;
+  background: var(--white);
   margin: auto 0;
   display: flex;
   justify-content: space-between;
@@ -203,6 +206,10 @@
   font-size: 18px;
 }
 
+html {
+  overflow-x: hidden;
+}
+
 body {
   font-family: "Public Sans", sans-serif;
   margin: 0;
@@ -215,7 +222,7 @@ body {
 
 .wrapper {
   padding: 0 var(--wrapperSpace);
-  max-width: calc(1115px + 1.5em);
+  max-width: calc(1200px + 1.5em);
   margin: auto;
   width: 100%;
   box-sizing: border-box;
@@ -223,11 +230,13 @@ body {
 
 .hero {
   text-align: center;
-  padding-bottom: 4.8em;
 }
 .hero .copy {
   margin-bottom: 2.1em;
   margin-top: 1.1em;
+}
+.hero__imageSrc {
+  display: none;
 }
 .hero__image {
   height: 292px;
@@ -240,59 +249,56 @@ body {
 @media screen and (min-width: 768px) {
   .hero {
     text-align: left;
-    background: url(../../static/images/bg-intro-desktop.svg);
+    background: url(../../static/images/bg-intro-desktop.svg), var(--very_Light_Gray);
     background-position: left 705px top -290px;
     background-repeat: no-repeat;
     background-size: cover;
-    min-height: 370px;
+    min-height: 670px;
     box-sizing: border-box;
   }
   .hero__content {
-    border: 1px solid blue;
     display: grid;
-    min-height: 370px;
+    min-height: 670px;
     align-items: center;
     grid-template-areas: "description image";
     grid-template-columns: 480px 1fr;
     position: relative;
     align-items: center;
   }
+  .hero__imageSrc {
+    display: none;
+  }
   .hero__image {
-    border: 1px solid purple;
     grid-area: image;
     min-height: inherit;
     position: absolute;
-    width: 650px;
+    width: 500px;
     left: 0;
+    top: 0;
     height: 775px;
-    margin: 0;
     background: url(../images/image-mockups.png) left bottom no-repeat;
     background-size: cover;
   }
   .hero__description {
-    border: 1px solid red;
     text-align: left;
   }
 }
 @media screen and (min-width: 1024px) {
-  .hero {
-    min-height: 550px;
-  }
-  .hero__content {
-    min-height: 550px;
+  .hero__imageSrc {
+    display: block;
+    overflow: hidden;
+    position: relative;
+    top: -120px;
+    right: -100px;
   }
   .hero__image {
-    background: url(../images/image-mockups.png) right bottom no-repeat;
-    background-size: 100%;
-    width: 730px;
-    left: 0;
+    background: none;
+    left: 150px;
+    right: 0;
     top: 0;
   }
 }
 
-.title {
-  border: 2px solid green;
-}
 .title__h1, .title__h3, .title__h2 {
   font-size: 2.2em;
   font-weight: 400;
@@ -352,7 +358,6 @@ body {
     text-align: left;
   }
   .why_header {
-    border: 1px solid red;
     width: 60%;
   }
   .why__grid {

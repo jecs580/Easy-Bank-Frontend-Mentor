@@ -1,6 +1,9 @@
 .header {
   // border: 5px solid blue;
-  position: relative;
+  position: fixed;
+  width: 100%;
+  z-index: 10;
+  background: var(--white);
   &__content {
     padding: 1.1em 0;
     display: flex;
