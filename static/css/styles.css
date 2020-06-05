@@ -326,11 +326,32 @@ body {
   padding: 0.9em 2.3em;
   border-radius: 2em;
   font-size: 0.8em;
+  cursor: pointer;
   border: none;
   display: inline-block;
   text-align: center;
   color: var(--white);
   background: linear-gradient(to right, var(--lime_Green) 0%, var(--bright_Cyan) 100%);
+  position: relative;
+}
+
+.button:hover {
+  background: linear-gradient(to right, var(--lime_Green) 0%, var(--bright_Cyan) 100%);
+}
+
+.button:hover::before {
+  opacity: 0.5;
+  content: "";
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  border-radius: 2em;
+  font-size: 0.8em;
+  color: var(--white);
+  background: white;
 }
 
 .why {
